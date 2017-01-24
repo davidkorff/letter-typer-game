@@ -27,6 +27,16 @@ function pressLetter(e){
     document.removeEventListener("keypress", pressLetter)
     startGame()
   }
+  else {
+    subtractToScore()
+  }
+
+}
+function subtractToScore(){
+  if (i>0){
+    i--
+    document.getElementById("score").innerHTML=i
+  }
 }
 
 function addToScore(){
