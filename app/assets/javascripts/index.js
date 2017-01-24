@@ -12,7 +12,7 @@ document.addEventListener('keydown', function(e) {
 
 function startGame(){
   let letter = letters[Math.floor((Math.random()*26))]
-  document.getElementById("game").innerHTML=letter.toUpperCase()
+  document.getElementById("game").innerHTML = letter.toUpperCase()
   didYouGetIt()
 }
 
