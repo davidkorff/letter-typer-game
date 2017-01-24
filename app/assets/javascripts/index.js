@@ -13,16 +13,16 @@ document.addEventListener('keydown', function(e) {
 function startGame(){
   let letter = letters[Math.floor((Math.random()*26))]
   document.getElementById("game").innerHTML=letter.toUpperCase()
-  didYouGetIt(letter)
+  didYouGetIt()
 }
 
-function didYouGetIt(letter){
+function didYouGetIt(){
   document.addEventListener("keypress", pressLetter)
 }
 
 function pressLetter(e){
   let letter = e.target.getElementsByTagName("p").game.innerHTML.toLowerCase()
-  if (e.key === letter) {//--console.log(e.key); console.log(e.which); console.log(letter);
+  if (e.key === letter) {
     addToScore()
     document.removeEventListener("keypress", pressLetter)
     startGame()
