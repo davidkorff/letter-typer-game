@@ -32,8 +32,9 @@ function pressLetter(e){
   }
 
 }
+
 function subtractToScore(){
-  if (i>0){
+  if (i<0){
     i--
     document.getElementById("score").innerHTML=i
   }
