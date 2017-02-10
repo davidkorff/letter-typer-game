@@ -3,7 +3,7 @@ document.addEventListener('keydown', function(e) {
   if (e.which === 13) {
     i=0
     document.getElementById("score").innerHTML = i
-    secs = 3000
+    secs = 1000
     startGame()
     document.getElementById("time").innerHTML = secs
     myTimer()
@@ -30,11 +30,10 @@ function pressLetter(e){
   else {
     subtractToScore()
   }
-
 }
 
 function subtractToScore(){
-  if (i>0){
+  if(i>0){
     i--
     document.getElementById("score").innerHTML=i
   }
@@ -44,7 +43,6 @@ function addToScore(){
   i++
   document.getElementById("score").innerHTML=i
 }
-
 function myTimer(){
   let id = setInterval(function(){
       secs--

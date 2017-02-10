@@ -3,20 +3,28 @@
   <head>
     <title>Letter Game</title>
     <style>
+        body {background-color: rgb(255,35,0);}
         h1 {font-size: 500%; display: inline;}
         h2 {font-size: 500%; display: inline;}
-        p {font-size: 500%; display: inline;}
-</style>
+        p {font-size: 500%;
+          text-align: center;
+          border: 5px solid black;
+          background-color: rgb(196,120,255);}
+        h3 {text-align: center;
+            border: 1px solid black;
+            background-color: lightblue;}
+    </style>
 
   </head>
 
   <body>
-    <p id="game">Press Enter to Start Game!</p><br><br>
+    <p id="game">Press Enter to Start Game!</p><br>
       <h1>Score:</h1>
-      <h1 id="score"> </h1><br><br>
+      <h1 id="score"> </h1><br>
       <h2>Time:</h2>
-      <h2 id="time"></h2><br><br>
-      <h2 id="final"></h2><br><br><br><br>
-      <h3>Instructions: As the letters appear, type them as fast as you can. You have 30 seconds to type as many correct letters as you can. </h3>
+      <h2 id="time"></h2><br>
+      <h2 id="final"></h2><br>
+      <h2 id="history"></h2>
+      <h3>Instructions: As the letters appear, type them as fast as you can. You have 30 seconds to type as many correct letters as you can. Any wrong answers will cost 1 point. </h3>
   </body>
 </html>
